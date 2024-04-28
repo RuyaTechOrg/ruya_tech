@@ -205,9 +205,7 @@ export default function DevPage () {
             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
         <Footer/>
