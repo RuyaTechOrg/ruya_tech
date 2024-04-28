@@ -18,7 +18,7 @@ export default function Footer() {
              <h3 className="h1 mb-4 mt-3 text-white" data-aos="fade-up">R<strong className='text-purple-500'>u</strong>y<strong className='text-purple-500'>a</strong>T<strong className='text-purple-500'>e</strong>ch</h3>
             </Link>
               </div>
-              <div className="text-gray-400">RuyaTech is a Personal Brand. A software Engineer interested in making quality and user friendly software.  also looking into and specializing in innovative solutions and cutting-edge Web3 technologies.</div>
+              <div className="text-gray-400">RuyaTech is a Software Engineering Brand. Interested in making quality and user friendly software. While also exploring  and specializing in other fields requiring innovative solutions and cutting-edge Web3 technologies.</div>
             </div>
 
             {/* 2nd, 3rd and 4th blocks */}
