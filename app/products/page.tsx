@@ -11,6 +11,9 @@ import TestimonialImage05 from '@/public/images/Screenshot Capture - 2024-04-25 
 import TestimonialImage08 from '@/public/images/iPhone 14 & 15 Pro Max - 1.png';
 import TestimonialImage07 from '@/public/images/iPhone 14 & 15 Pro - 1.png';
 import TestimonialImage09 from '@/public/images/iPhone 14 & 15 Pro Max - 1 (1).png';
+import TestimonialImage10 from '@/public/images/Onboarding.png';
+import TestimonialImage11 from '@/public/images/Login.png';
+import TestimonialImage12 from '@/public/images/Signup.png';
 export const metadata =  {
     title : 'Products  - Ruyatech',
     description : 'A showcase of products {software}.',
@@ -194,7 +197,9 @@ export default function DevPage () {
             {/* 1st testimonial */}
             <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up">
             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
+            <Image src={TestimonialImage10} alt="product img" className="pb-5"/>
                 <cite className="text-gray-200 not-italic">Agrohub- RuyaTech,</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Coming soon...</a>
+               
               </div>
             </div>
 
@@ -203,12 +208,14 @@ export default function DevPage () {
               <div>
               </div>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
+              <Image src={TestimonialImage11} alt="product img" className="pb-5"/>
               </div>
             </div>
 
             {/* 3rd testimonial */}
             <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="400">
             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
+            <Image src={TestimonialImage12} alt="product img" className="pb-5"/>
               </div>
             </div>
           </div>
