@@ -58,7 +58,7 @@ export default function Features() {
                   <circle className="stroke-current text-purple-300" cx="13" cy="9" r="3" />
                 </g>
               </svg>
-              <h4 className="h4 mb-2">Arduino Programming</h4>
+              <h4 className="h4 mb-2">Financial Programming</h4>
               <p className="text-lg text-gray-400 text-center">This particular project is University inspired, as i get to build cool gadgets and exercise concepts taught in the classroom.</p>
             </div>
 
