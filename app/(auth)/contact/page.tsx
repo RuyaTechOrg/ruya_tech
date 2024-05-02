@@ -18,7 +18,7 @@ export default function SignUp() {
 
           {/* Form */}
           <div className="max-w-3xl mx-auto">
-            <form method='POST' action={'#'}>
+            <form method='POST' action={'/api/contact/route'}>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
                   <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="full-name">Full Name <span className="text-red-600">*</span></label>

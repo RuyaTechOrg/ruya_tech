@@ -32,7 +32,7 @@ export default function Header() {
               <Link href="/products" className="btn-sm text-white  hover:text-purple-500">
               Projects
               </Link>
-              <Link href="/signup" className="btn-sm text-white  hover:text-purple-500">
+              <Link href="/contact" className="btn-sm text-white  hover:text-purple-500">
               Contact
               </Link>
               </li>
