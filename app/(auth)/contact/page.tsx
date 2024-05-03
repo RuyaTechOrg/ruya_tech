@@ -1,11 +1,36 @@
-export const metadata = {
-  title: 'Contact - RuyaTech',
-  description: 'Page Description',
-}
-
+"use client"
+import { FormEvent,useState } from 'react'
+import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
 export default function SignUp() {
+  const router = useRouter()
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+  
+  async function submitForm(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+ 
+    const formData = new FormData(event.currentTarget)
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      body: formData,
+    })
+ 
+    if (response.ok) {
+      router.push('/sucess'); 
+    } else {
+      console.error('Failed to submit form');
+    }
+  }
+
   return (
     <section className="relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -18,23 +43,23 @@ export default function SignUp() {
 
           {/* Form */}
           <div className="max-w-3xl mx-auto">
-            <form method='POST' action={'/api/contact/route'}>
+            <form onSubmit={submitForm}>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
                   <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="full-name">Full Name <span className="text-red-600">*</span></label>
-                  <input id="full-name" type="text" className="form-input w-full text-gray-300" placeholder="First and last name" required />
+                  <input id="full-name" type="text" className="form-input w-full text-gray-300" placeholder="First and last name" required onChange={handleChange}/>
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
                   <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="email">Work Email <span className="text-red-600">*</span></label>
-                  <input id="email" type="email" className="form-input w-full text-gray-300" placeholder="you@yourcompany.com" required />
+                  <input id="email" type="email" className="form-input w-full text-gray-300" placeholder="you@yourcompany.com" required onChange={handleChange}/>
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full px-3">
                   <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="password">Message<span className="text-red-600">*</span></label>
-                  <input id="password" type="text-area" className="form-input w-full text-gray-300" placeholder="Enter message you wish to pass..." required />
+                  <textarea id="message"  className="form-input w-full text-gray-300" placeholder="Enter message you wish to pass..." rows={5} required onChange={handleChange}/>
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mt-6">
