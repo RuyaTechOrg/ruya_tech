@@ -24,27 +24,14 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4" data-aos="fade-up"> Hi there. I am Ruyatech</h1>
+            <h1 className="h1 mb-4" data-aos="fade-up"> Hi there, I am Ruyatech</h1>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200">Software Engineer / UI UX Desginer</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
-              {/* <div data-aos="fade-up" data-aos-delay="400">
-                <a className="btn text-white bg-green-600 hover:bg-white-700 text-green-600 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Start free trial</a>
-              </div> */}
               <div data-aos="fade-up" data-aos-delay="600">
                 <a className="btn text-purple-500 bg-black-900 hover:bg-black border border-purple-600 hover:text-white w-full sm:w-auto sm:ml-4" href='download\Aruya CV.docx' download={true}>Download Resume</a>
               </div>
             </div>
           </div>
-
-          {/* <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1024}
-            thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
-            videoWidth={1920}
-            videoHeight={1080} /> */}
-
         </div>
 
       </div>
