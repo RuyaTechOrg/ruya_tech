@@ -61,14 +61,14 @@ export default function MobileMenu() {
       >
         <ul className="bg-gray-800 px-4 py-2">
           <li>
-            <Link href="/About" className="flex font-medium w-full text-white-600 hover:text-gray-200 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
+            <Link href="/About" className="flex font-medium w-full text-white-600 hover:text-purple-600 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>
               About
             </Link>
           </li>
           <li>
             <Link
               href="/products"
-              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:text-green-600 transition duration-150 ease-in-out" onClick={() => setMobileNavOpen(false)}
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:text-purple-600 transition duration-150 ease-in-out" onClick={() => setMobileNavOpen(false)}
             >
               Products
             </Link>
@@ -76,7 +76,7 @@ export default function MobileMenu() {
           <li>
             <Link
               href="/contact"
-              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:text-green-600 transition duration-150 ease-in-out" onClick={() => setMobileNavOpen(false)}
+              className="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded-sm text-white hover:text-purple-600 transition duration-150 ease-in-out" onClick={() => setMobileNavOpen(false)}
             >
               Contact
             </Link>

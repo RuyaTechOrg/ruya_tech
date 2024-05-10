@@ -89,7 +89,10 @@ export default function DevPage () {
           <div className="max-w-6xl mx-start pb-12 md:pb-20">
             <h1 className="h1 mb-4">2. Streemhub</h1>
             <p className="text-xl text-purple-300">A team management platform</p>
-            <p className="text-xl text-white pb-5">The idea bringing about streemhub, was a platform that enabled real-time management,auditing / modification between members of a particular team, aiming to solve a particular problem E.g Developers in a team working on a particular project could modify each others code real-time. senior developers could access the code written by junior developers in real-time and make changes where due.</p>
+            <p className="text-xl text-white pb-5">The idea bringing about streemhub, is a platform that enables real-time management,auditing / modification between members of a particular team, aiming to solve a particular problem E.g Developers in a team working on a particular project could modify each others code real-time. senior developers could access the code written by junior developers in real-time and make changes where due.
+            <br/>
+            In this project i was part of a team of developers. 
+            </p>
             <Link href="/" className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Github">
                   <h4 className="text-white">See code on Github</h4>
                   <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -216,6 +219,52 @@ export default function DevPage () {
             <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="400">
             <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
             <Image src={TestimonialImage12} alt="product img" className="pb-5"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div className="max-w-6xl mx-start pb-12 md:pb-20">
+            <h1 className="h1 mb-4">4. AutoHub </h1>
+            <p className="text-xl text-purple-300">"Automobile_based Market place"</p>
+            <p className="text-xl text-white pb-5">AutoHub is a platform for buying and selling of Automobiles across the country. Customers can request for products in bulk and agrohub then stands as the middle man between the customers and the producers. Built with flutter and Python.</p>
+            <Link href="/" className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Github">
+                  <h4 className="text-white">See code on Github</h4>
+                  <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 8.2c-4.4 0-8 3.6-8 8 0 3.5 2.3 6.5 5.5 7.6.4.1.5-.2.5-.4V22c-2.2.5-2.7-1-2.7-1-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5.8.1 1.2.8 1.2.8.7 1.3 1.9.9 2.3.7.1-.5.3-.9.5-1.1-1.8-.2-3.6-.9-3.6-4 0-.9.3-1.6.8-2.1-.1-.2-.4-1 .1-2.1 0 0 .7-.2 2.2.8.6-.2 1.3-.3 2-.3s1.4.1 2 .3c1.5-1 2.2-.8 2.2-.8.4 1.1.2 1.9.1 2.1.5.6.8 1.3.8 2.1 0 3.1-1.9 3.7-3.7 3.9.3.4.6.9.6 1.6v2.2c0 .2.1.5.6.4 3.2-1.1 5.5-4.1 5.5-7.6-.1-4.4-3.7-8-8.1-8z" />
+                  </svg>
+                </Link>
+          </div>
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="py-12 md:py-20 border-t border-gray-800">
+
+          {/* Testimonials */}
+          <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none">
+
+            {/* 1st testimonial */}
+            <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up">
+            <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
+            {/* <Image src={TestimonialImage10} alt="product img" className="pb-5"/> */}
+                <cite className="text-gray-200 not-italic">Agrohub- RuyaTech,</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Coming soon...</a>
+              </div>
+            </div>
+
+            {/* 2nd testimonial */}
+            <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="200">
+              <div>
+              </div>
+              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
+              {/* <Image src={TestimonialImage11} alt="product img" className="pb-5"/> */}
+              </div>
+            </div>
+
+            {/* 3rd testimonial */}
+            <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="400">
+            <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
+            {/* <Image src={TestimonialImage12} alt="product img" className="pb-5"/> */}
               </div>
             </div>
           </div>
