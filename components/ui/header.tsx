@@ -12,7 +12,7 @@ export default function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link href="/" className="block" aria-label="Gumonda">
-             <h3 className="h2 mb-4 mt-3 text-white" data-aos="fade-up">R<strong className='text-purple-500'>u</strong>y<strong className='text-purple-500'>a</strong>T<strong className='text-purple-500'>e</strong>ch</h3>
+             <h3 className="h2 mb-4 mt-3 text-white" data-aos="fade-up">R<strong className='text-purple-500'>u</strong>y<strong className='text-purple-500'>a</strong>T<strong className='text-purple-500'>e</strong>c<strong className='text-purple-500'>h</strong></h3>
             </Link>
           </div>
 
